@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Header styling */
+        header {
+            background-color: blue;
+            padding: 20px;
+        }
+
+        
+        #navi ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+
+        #navii ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #navi ul li {
+
+            margin-right: 20px;
+        }
+
+        #navii ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+
+        #navi ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;  
+            font-size: 16px;
+        }
+
+        #navii ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div id="navii">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+                <button style ="float: right" (click)="toggleButtonState()">{{buttonState}}</button>
+                <input type="text" id="myInput" placeholder="Search">
+            </ul>
+
+        </div>
+
+        <div id="navi">
+            <ul>
+                <li><a href="#">City</a></li>
+                <li><a href="#">Contact</a></li>
+                <!--<button (click)="toggleButtonState()">{{buttonState}}</button><br> -->
+                
+            </ul>
+
+        </div>
+
+    </header>
+</body>
+
+</html>
